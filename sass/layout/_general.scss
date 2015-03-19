@@ -1,0 +1,28 @@
+/////////////////////////////
+///******* GENERAL *******///
+/////////////////////////////
+
+// Generic base styles that don't belong anywhere else //
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+body {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.container {
+	max-width: $lg_bp;
+	margin: 0 auto;
+	padding: 0px 15px;
+	@include clearfix();
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

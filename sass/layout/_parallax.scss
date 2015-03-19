@@ -1,0 +1,25 @@
+.parallax-container  {
+	position:relative;
+	overflow: hidden;
+	img{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height: auto;
+	}
+	.content {
+		position: relative;
+		padding-top: 56%;
+		background: rgba(0,0,0,0.4);
+	}
+	.title {
+		position: absolute;
+		top: 50%;
+		margin-top: -50px;
+		left: auto;
+		color: #fff;
+		width: 100%;
+		text-align: center;
+	}
+}

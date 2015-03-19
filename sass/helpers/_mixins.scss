@@ -1,0 +1,95 @@
+/////////////////////////////
+///******* MIXINS ********///
+/////////////////////////////
+
+// BREAKPOINTS //
+@mixin bp-large {
+	@media only screen and (min-width: $lg_bp) {
+		@content;
+	}
+}
+
+@mixin bp-medium {
+	@media only screen and (min-width: $md_bp) {
+		@content;
+	}
+}
+
+@mixin bp-small {
+	@media only screen and (min-width: $sm_bp) {
+		@content;
+	}
+}
+
+@mixin bp-xsmall {
+	@media only screen and (min-width: $xs_bp) {
+		@content;
+	}
+}
+
+// KEYFRAME ANIMATIONS //
+@mixin keyframe($name) {
+	@-webkit-keyframes $name{
+		@content;
+	}
+	@-moz-keyframes $name {
+		@content;
+	}
+	@-o-keyframes $name{
+		@content;
+	}
+	@keyframes $name {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+	-webkit-animation: #{$str};
+  	-moz-animation:    #{$str};
+  	-o-animation:      #{$str};
+  	animation: #{$str};
+}
+
+// CLEARFIX //
+@mixin clearfix {
+	*zoom: 1;
+	&:before, 
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// REMs with PX FALLBACK //
+@mixin font-size($size) {
+	font-size: $size + px;
+	font-size: ($size * 0.1) + rem;
+}
+
+// FLEXBOX MIXINS //
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
