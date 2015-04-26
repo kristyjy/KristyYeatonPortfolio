@@ -509,7 +509,6 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.85);
     padding: 15px 0 6px;
   }
 }
@@ -647,18 +646,19 @@ img {
     text-transform: none;
     padding: 2px 0px;
     margin: 0 5px;
+    font-weight: bold;
   }
-  /* line 124, ../sass/layout/_header.scss */
+  /* line 125, ../sass/layout/_header.scss */
   .main-menu a:before {
     content: '';
     position: absolute;
     bottom: 0;
-    height: 2px;
-    background-color: #999;
+    height: 3px;
+    background-color: #555;
     width: 0px;
     transition: width 0.3s ease;
   }
-  /* line 134, ../sass/layout/_header.scss */
+  /* line 135, ../sass/layout/_header.scss */
   .main-menu a:hover:before {
     width: 100%;
   }
@@ -672,7 +672,7 @@ img {
     top: 0;
     float: right;
   }
-  /* line 146, ../sass/layout/_header.scss */
+  /* line 147, ../sass/layout/_header.scss */
   .main-menu a {
     display: inline-block;
     border: none;
