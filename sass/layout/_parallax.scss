@@ -10,8 +10,11 @@
 	}
 	.content {
 		position: relative;
-		padding-top: 56%;
+		padding-top: 55%;
 		background: rgba(0,0,0,0.4);
+	}
+	&.snippet-intro .content {
+		padding-top: 40%;
 	}
 	.title {
 		position: absolute;

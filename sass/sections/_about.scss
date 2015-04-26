@@ -69,21 +69,20 @@
 		float: right;
 	}
 	img {
-		background: $profile_bg;
 		border-radius: 130px;
 		width: 130px;
 		height: auto;
 		margin: 0 auto;
 		display: block;
-		border: 3px solid $profile_border;
+		box-shadow: 0 0 8px rgba(0,0,0,0.6);
 		@include bp-xsmall {
 			width: 180px;
 			border-radius: 180px;
 		}
 		@include bp-small {
-			width: 320px;
-			border-radius: 320px;
-			margin: 0 0 20px 20px;
+			width: 230px;
+			border-radius: 230px;
+			margin: 20px 0 20px 20px;
 		}
 	}
 }

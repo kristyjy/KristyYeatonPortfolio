@@ -1,0 +1,55 @@
+.snippet-intro {
+	margin: 20px 0 40px;
+	h1 {
+		font-size: 35px;
+		font-weight: 100;
+		text-transform: uppercase;
+		margin: 0;
+		@include bp-xsmall {
+			font-size: 60px;
+		}
+		@include bp-small {
+			font-size: 80px;
+		}
+		@include bp-medium {
+			font-size: 100px;
+		}
+	}
+	h2 {
+		font-weight: normal;
+		margin: 0;
+		@include bp-xsmall {
+			font-size: 30px;
+		}
+		@include bp-small {
+			font-size: 50px;
+		}
+		@include bp-medium {
+			font-size: 55px;
+		}
+	}
+	.title {
+		height: 68px;
+		margin-top: -34px;
+		@include bp-xsmall {
+			height:108px;
+			margin-top: -54px;
+		}
+		@include bp-small {
+			height: auto;
+			margin-top: -70px;
+		}
+	}
+}
+
+.codepen-col {
+	padding-bottom: 15px;
+	@media (min-width:768px) {
+		float: left;
+		width: 50%;
+		padding: 0 15px 15px;
+	}
+	@media (min-width: 920px) {
+		width: 33.33333%;
+	}
+}
