@@ -66,7 +66,8 @@
 // REMs with PX FALLBACK //
 @mixin font-size($size) {
 	font-size: $size + px;
-	font-size: ($size * 0.1) + rem;
+	// Chrome bug be breakin' my rems :'( //
+	//font-size: ($size * 0.1) + rem; //
 }
 
 // FLEXBOX MIXINS //
