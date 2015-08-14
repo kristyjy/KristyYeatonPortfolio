@@ -13,3 +13,10 @@ body {
 	@include font-size(14);
 	font-family: $primary_family;
 }
+
+a {
+	color: $link_color;
+	&:hover {
+		color: darken($link_color, 10%);
+	}
+}
